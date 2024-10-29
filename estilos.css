@@ -1,0 +1,46 @@
+body {
+    width: 60em;  /* Ancho máximo de 60em */
+    margin: 0 auto;  /* Centra el contenido en la pantalla */
+    font-family: Arial, sans-serif;
+}
+
+
+h1 {
+    text-align: center;  
+    font-size: 2em;
+}
+
+
+h2 {
+    font-size: 1.5em;
+    border: 2px solid #AAA;  
+    padding: 0.5em;
+}
+
+/* Contenedor para las columnas de "Datos del libro" y "Descripción del libro" */
+.contenedor {
+    display: flex;
+    gap: 1em;  /* Espacio entre las dos columnas */
+}
+
+/* Columna izquierda para los datos del libro */
+.columna-izquierda {
+    width: 16em;  /* Ancho fijo de 16em */
+}
+
+/* Columna derecha que ocupa el espacio restante */
+.columna-derecha {
+    flex-grow: 1;  /* Ocupa el espacio restante */
+}
+
+
+ul {
+    list-style-type: none;  
+    padding: 0;
+}
+
+/* Sección de contenido del libro con 3 columnas */
+#contenido-libro {
+    column-count: 3;  /* Divide el contenido en tres columnas */
+    column-gap: 1em;  /* Espacio entre las columnas */
+}
